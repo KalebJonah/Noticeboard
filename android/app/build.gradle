@@ -107,6 +107,7 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -147,6 +148,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-image-crop-picker')
     implementation(project(':react-native-firebase')) {
         transitive = false
     }
